@@ -8,9 +8,7 @@ use Illuminate\Http\Request;
 
 class OminoController extends Controller
 {
-    public function omini() {
+    public function show() {
 
-      cose...
-      return view('cose');
     }
 }
