@@ -19,9 +19,9 @@ class CreateOminiTable extends Migration
             $table-> string('first_name');
             $table-> string('last_name');
             $table-> text('address');
-            $table-> mediumInteger('code');
+            $table-> text('code');
             $table-> string('state');
-            $table-> bigInteger('phone_number');
+            $table-> text('phone_number');
             $table-> string('role');
 
             $table->timestamps();
