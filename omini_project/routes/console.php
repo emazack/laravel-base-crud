@@ -1,5 +1,6 @@
 <?php
 
+use App\Omino;
 use Illuminate\Foundation\Inspiring;
 use Illuminate\Support\Facades\Artisan;
 
