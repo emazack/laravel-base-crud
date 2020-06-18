@@ -13,4 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/home', 'OminoController@omini');
+Route::view('/', 'home');
