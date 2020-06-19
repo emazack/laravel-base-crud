@@ -7,6 +7,7 @@
     <h1>OMINIDI</h1>
     <hr>
     <br>
+    <h2> <a href={{ route('create') }}> CREATE NEW OMINO </a> </h2>
     <ul>
       @foreach ($omini as $omino)
         <li>

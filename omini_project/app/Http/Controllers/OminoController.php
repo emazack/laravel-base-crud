@@ -27,4 +27,28 @@ class OminoController extends Controller
 
       return redirect() -> route('home');
     }
+
+    public function create() {
+
+      return view('omino-create');
+    }
+
+    public function store(Request $request) {
+
+      $data = $request -> all();
+
+      $omino = new Omino;
+
+      $omino -> first_name = $data['name'];
+      $omino -> last_name = $data['lastname'];
+      $omino -> address = $data['address'];
+      $omino -> code = $data['code'];
+      $omino -> state = $data['state'];
+      $omino -> phone_number = $data['phone'];
+      $omino -> role = $data['role'];
+
+      $omino -> save();
+
+      return redirect() -> route('home');
+    }
 }
