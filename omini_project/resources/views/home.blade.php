@@ -2,8 +2,19 @@
 
 @section('content')
 
-  <p>
-    QUESTO E UN MAIN DI TUTTO RISPETTO
-  </p>
+  <div class="omini">
+
+    <h1>OMINIDI</h1>
+    <hr>
+    <br>
+    <ul>
+      @foreach ($omini as $omino)
+        <li>
+          <b>Nome: </b> <a href={{ route("show", $omino['id']) }}>{{ $omino['first_name'] }}</a>
+        </li>
+      @endforeach
+    </ul>
+
+  </div>
 
 @endsection
