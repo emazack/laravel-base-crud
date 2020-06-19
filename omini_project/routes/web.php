@@ -8,3 +8,5 @@ Route::get('/show/{id}', 'OminoController@show')->name('show');
 Route::get('/destroy/{id}', 'OminoController@delete')->name('destroy');
 Route::get('/create', 'OminoController@create')->name('create');
 Route::post('/store', 'OminoController@store')->name('store');
+Route::get('/edit/{id}', 'OminoController@edit')->name('edit');
+Route::post('/update{id}', 'OminoController@update')->name('update');

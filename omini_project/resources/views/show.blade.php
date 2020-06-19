@@ -27,6 +27,13 @@
 
       CANCELLA STO BASTARDO
     </a>
+    <a href={{ route("edit", $omino['id'])}}>
+      <br>
+      <hr>
+
+      MODIFICA I DATI
+    </a>
+
 
   </div>
 
